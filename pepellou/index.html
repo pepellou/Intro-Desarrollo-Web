@@ -1,19 +1,54 @@
 <html>
 <head>
-	<title>Hola</title>
+	<title>My favourite videos</title>
+	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			font-family: 'Swanky and Moo Moo', cursive;
+			font-size: 14pt;
+		}
+		h1 { 
+			font-size: 1.5em;
+			color: #888; 
+			background-color: #222;
+			padding: 1% 10%;
+			border: 1px dotted #ccc;
+		}
+		p {
+			text-align: justify;
+			line-height: 1.2em;
+		}
+		a {
+			color: blue;
+			text-decoration: none;
+		}
+		a:hover {
+			color: red;
+			border: 2px dotted black;
+		}
+		td {
+			border: 1px solid black;
+			background-color: gray;
+		}
+		div {
+			position: relative;
+			border: 1px solid red;
+			background-color: gray;
+		}
+	</style>
 </head>
 <body>
-	<h1>Titulo 1</h1>
-	<h2>Titulo 2</h2>
-	<p>
-		Hola,&nbsp;&nbsp;&nbsp;Mundo
-		<a href="http://www.google.es">Google</a>
-		<img src="https://en.gravatar.com/avatar/42cd41cd57333cb10db2f0339e767ece?s=100" />
-	</p>
-	<p>
-		Y Socrates dijo:
-		<blockquote>Solo se que no se nada</blockquote>
-	</p>
-	<p>Otro p&aacute;rrafo</p>
+	<h1>My favourite videos</h1>
+	<div style="z-index: 2">
+		Welcome to my favourite videos page.<br/>
+		Here you can make a list of your favourite videos and see others' lists.
+	</div>
+	<div style="margin-top: -10px; z-index: 1">
+		Lorem Ipsum<br/>
+	</div>
+
+	<a href="">Login here</a><br/>
+	<a href="video-list.html">Your list</a><br/>
+	<a href="http://www.imdb.com" target="_blank">Go to IMDB</a>
 </body>
 </html>
