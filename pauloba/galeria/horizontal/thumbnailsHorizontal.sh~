@@ -1,0 +1,17 @@
+#!/bin/bash
+
+WIDTH=75
+HEIGHT=100!
+
+rm -R thumbnails 2> /dev/null
+mkdir thumbnails
+
+GAL_PATH="galeria/vertical/"
+HTML=''
+
+for i in $(ls *.jpg); do
+convert $i -resize $WIDTH"x"$HEIGHT thumbnails/$i
+HTML=$HTML'<div><a href="'$GAL_PATH$i'"><img src="'$GAL_PATH'thumbnails/'$i'" /></a></div>'
+done
+
+echo $HTML > galeria.html  
