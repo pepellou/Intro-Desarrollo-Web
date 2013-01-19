@@ -9,38 +9,36 @@
 		<title>Real World Pixels</title>
 		<meta name="description" content="Real World Pixels owners are proud handcrafters and sellers of Hama beads designs.">
 		<meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main2.css">
-		<link rel="stylesheet" href="css/jquery.lightbox-0.5.css">  <!-- hoja CSS galeria de imagenes -->
+   <!--     <link rel="stylesheet" href="css/normalize.min.css"> <!-->
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main13.css">
+		<link rel="stylesheet" href="css/jquery.lightbox-0.5.css">  <!-- hoja CSS galeria de imagenes -->		
 	</head>
 	
     <body>
 		<!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-		<div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">
-					<img src="img/logo.png" width="39%"/></h1>
-			 </header>
-        </div>
-        
-        <div class="main-menu">
+
+        <div id="main-menu">
 			<ul>
-				<li><a href="#home">Inicio</a></li>
+				<li id="logo"><img src="img/logo.png" width="90%"/></li>
+				<li><a href="index.html">Galer&iacute;a</a></li>
                 <li><a href="#social">Redes</a></li>
                 <li><a href="#pedidos">Pedidos</a></li>
-                <li><a href="#info"> + info</a></li>
-                <li><a href="EN/index.html"/><img src="img/english.png"/></a>
+                <li><a href="#FAQ">F.A.Q.</a></li>
+                <li><a href="#info">Acerca de</a></li>
+                <li id="lastItem"><a href="EN/index.html"/><img src="img/english.png"/></a>
 					<a href="http://facebook.com/realworldpixels" target="_blank"><img src="img/facebook.png"/></a>
 					<a href="http://twitter.com/realworldpixels" target="_blank"><img src="img/twitter.png"/></a>
 					<a href="mailto:realworldpixels@gmail.com" target="_blank"><img src="img/mail.png"/></a></li>
             </ul>
+         </div>
             
-            <div class="pics wrapper clearfix">
+            <div id="pics">
+
                 <article>
-				
-                <article>
+					<h1>Galer&iacute;a</h1>
                     <header>
                         <p>Todos los dise&ntilde;os de la galer&iacute;a est&aacute;n disponibles para la venta. Pincha en una imagen para verla grande y navegar por la galer&iacute;a.</p>
                     </header>  
@@ -116,71 +114,80 @@
 						</div>
 					</section>                  
                 </article>
+               </div> <!-- FIN SECCION FOTOS !--> 
+               
+               
                 
-                
-                <div class="social wrapper clearfix" id="social">			
-				<section id="twitter">
-					<header> <p> <h2> ¡Sigue nuestros tweets! </h2></p>  </header>
-					 <a class="twitter-timeline"  href="https://twitter.com/RealWorldPixels" data-widget-id="280737459350933506" target="_TOP" >Tweets por @RealWorldPixels</a>
-						<script>
-							!function(d,s,id)
-							{
-								var js,fjs=d.getElementsByTagName(s)[0];
-								if(!d.getElementById(id))
+                <div id="social">	
+					<h1>Redes sociales</h1>
+					<article>
+						<section id="twitter">
+							<header> <p> <h2> ¡Sigue nuestros tweets! </h2></p>  </header>
+							<a class="twitter-timeline"  href="https://twitter.com/RealWorldPixels" data-widget-id="280737459350933506" target="_TOP" >Tweets por @RealWorldPixels</a>
+							<script>
+								!function(d,s,id)
 								{
-									js=d.createElement(s);
-									js.id=id;
-									js.src="//platform.twitter.com/widgets.js";
-									fjs.parentNode.insertBefore(js,fjs);
+									var js,fjs=d.getElementsByTagName(s)[0];
+									if(!d.getElementById(id))
+									{
+										js=d.createElement(s);
+										js.id=id;
+										js.src="//platform.twitter.com/widgets.js";
+										fjs.parentNode.insertBefore(js,fjs);
+									}
 								}
-							}
-							(document,"script","twitter-wjs");
-						</script>
-				</section>  <!-- fin section widget twitter -->
+								(document,"script","twitter-wjs");
+							</script>
+						</section>  <!-- fin section widget twitter -->
 
-				<section id="facebook">
-					<header> <p> <h2>¡Estamos en Facebook! </p></h2> </header>
-						<a href="https://www.facebook.com/RealWorldPixels" target="_TOP"><img src="img/fb.jpg" width="73%"></a>
-				</section> 
+						<section id="facebook">
+							<header> <p> <h2>¡Estamos en Facebook! </p></h2> </header>
+								<a href="https://www.facebook.com/RealWorldPixels" target="_TOP"><img src="img/fb.jpg" width="73%"></a>
+						</section> 
+					</article>
+				</div> <!-- FIN SECCION REDES SOCIALES !-->
 				
 				
-				
-            <?php require_once('recaptchalib.php'); $publickey = "6LePnNgSAAAAAMQRqHqtdHZ0gs-TCojJugnmd9MG"; ?>
-            <div class="main wrapper clearfix">
-                 <article id="pedidos">
-                    <header>
-                        <h3>PEDIDOS</h3>
-                        <p>Rellena el formulario para realizar un pedido o ponerte en contacto conmigo si tienes dudas ;) <br><b>Pide presupuesto sin compromiso</b></p>
-                    </header> 
-                    
-                    <section>
-						<form action="send.php" method="post" id="form1" class="cmxform" >
-							<?php
-								if(isset($_GET['err'])){
-									echo "<span style='color:red;font-weight:bold'>LOS CAMPOS: NOMBRE, E-MAIL y 
-									      COMENTARIOS SON OBLIGATORIOS</span></br>";	
-								}
-								if(isset($_GET['error'])){
-									echo "<span style='color:red;font-weight:bold'>CAPTCHA ERR&Oacute;NEO</span></
-									     br>";	
-								}
-								if(isset($_GET['ok'])){
-									echo "<span style='color:green;font-weight:bold'>MENSAJE ENVIADO</span></
-									      br>";	
-								}
-							?>
-							<div>Tu nombre: </div> <input type="text" name="name" class="required"/></br>
-							<div>Tu e-mail: </div> <input type="text" name="mail"  class="required email"/></br>
-							<div>Tu direcci&oacute;n (opcional): </div> <input type="text" name="dir" /></br>
-							<div>Comentarios: </div> <textarea name="other" rows="5" cols="30" class="required"></textarea></br></br>
-							<?php
-								echo recaptcha_get_html($publickey, $error);
-							?></br>
-							<input type="submit" value="Enviar formulario"/> <!-- boton para enviar formulario-->							
-						</form>
-                    </section>                   
-                </article>
+				<div id=formulario>
+				    <?php require_once('recaptchalib.php'); $publickey = "6LePnNgSAAAAAMQRqHqtdHZ0gs-TCojJugnmd9MG"; ?>
+					
+					<article id="pedidos">
+						<header>
+							<h1>Pedidos</h1>
+							<p>Rellena el formulario para realizar un pedido o ponerte en contacto conmigo si tienes dudas ;) <br><b>Pide presupuesto sin compromiso</b></p>
+						</header> 
+						
+						<section>
+							<form action="send.php" method="post" id="form1" class="cmxform" >
+								<?php
+									if(isset($_GET['err'])){
+										echo "<span style='color:red;font-weight:bold'>LOS CAMPOS: NOMBRE, E-MAIL y 
+											  COMENTARIOS SON OBLIGATORIOS</span></br>";	
+									}
+									if(isset($_GET['error'])){
+										echo "<span style='color:red;font-weight:bold'>CAPTCHA ERR&Oacute;NEO</span></
+											 br>";	
+									}
+									if(isset($_GET['ok'])){
+										echo "<span style='color:green;font-weight:bold'>MENSAJE ENVIADO</span></
+											  br>";	
+									}
+								?>
+								<div>Tu nombre: </div> <input type="text" name="name" class="required"/></br>
+								<div>Tu e-mail: </div> <input type="text" name="mail"  class="required email"/></br>
+								<div>Tu direcci&oacute;n (opcional): </div> <input type="text" name="dir" /></br>
+								<div>Comentarios: </div> <textarea name="other" rows="5" cols="30" class="required"></textarea></br></br>
+								<?php
+									echo recaptcha_get_html($publickey, $error);
+								?></br>
+								<input type="submit" value="Enviar formulario"/> <!-- boton para enviar formulario-->							
+							</form>
+						</section>                   
+					</article>
 				</br>
+				
+				
+				
 				<aside id="FAQ"> <!-- texto de la derecha, la posicion esta definida en el CSS -->
                     <h1>FAQ</h1>
                    					
@@ -281,15 +288,15 @@
 							Tambi&eacute;n debes tener en cuenta que si pides un dise&ntilde;o muy grande, el env&iacute;o del pedido puede demorarse.
 						</div>
                     </p>
-              </aside>
+              </aside>  <!-- FIN DE FAQ !-->
+              </div> <!-- FIN DE FORMULARIO + FAQ !-->
               
               
               
-              
-              <div class="info wrapper clearfix" id="info">
+              <div id="info">
 			
 				<aside> <!-- texto de la derecha, la posicion esta definida en el CSS -->
-                    <h3>Sobre mi ...</h3>
+                    <h1>Sobre mi ...</h1>
                     <p>
 						Hola, me llamo Paula, y descubr&iacute; los <i>beads</i> hace tiempo, pero no me anim&eacute; a hacer dise&ntilde;os con ellos hasta 2012.
                     </p>
@@ -359,9 +366,8 @@
                       </p>
                     </section>
                 </article>
+             </div> <!-- FIN DE INFO !-->
 
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
          <div class="footer-container">
             <footer class="wrapper">
 					
