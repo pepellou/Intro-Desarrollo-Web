@@ -1,0 +1,106 @@
+
+html,
+button,
+input,
+select,
+textarea {
+    color: grey;
+}
+
+body {
+	font-family:font-family: 'Oxygen', sans-serif;
+	color:#ffffff;
+	background-color:#6d6968;
+}
+
+a:link {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+a:hover {
+	font-weight:bold;
+}
+
+a:active {
+	font-weight:bold;  /*en este caso no queda marcado el link activo porque hay un único archivo index donde esta todo el contenido*/
+}
+
+a:visited {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+#pics, #social, #formulario,#info {
+	margin-left:14%;
+	margin-right:10%;
+}
+
+#main-menu {
+	position:fixed;
+	background-color:#292929;
+	width:13%;
+    border-radius:20px;
+}
+
+#main-menu ul {
+	list-style-type: none;  /*elimina los bullets de los ul*/
+	padding:5%;
+	margin-left:10%;
+	margin-bottom:10%;
+}
+
+#main-menu #logo {
+	margin-bottom:10%;
+}
+
+#main-menu #lastItem {
+	margin-top:10%;
+}
+
+#pics {
+	overflow: auto;	
+}
+
+#galeria img, #galeria2 img {
+	float:left;
+}
+
+#galeria {
+	overflow: auto;	
+	border:1px solid black;
+	width:60%;
+} 
+
+#galeria2 {
+	overflow: auto;	
+	border:1px solid black;
+	width:60%;	
+}
+
+#social {
+}
+
+#social #twitter {
+	overflow: auto;
+	border:1px solid black;
+	width:55%;
+	float:left;
+}
+
+#social #facebook {
+	overflow: auto;
+	border:1px solid black;
+	width:25%;
+	float:rigth;
+}
+
+h1 {
+	margin-left:15%;
+	color:#292929;
+	font-weight:bold;
+	font-size:3em;
+}
+
+
+
