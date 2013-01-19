@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+for i in $(ls *.jpg); do
+composite -dissolve 50% -gravity South -quality 100 watermark.png $i $i
+done

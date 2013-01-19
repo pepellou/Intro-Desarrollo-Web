@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/*
+	=====================================
+	proyecto: bcgarcia 
+	autor:  Brais Calvo Garcia
+	fecha creacion: enero 2013
+	ultima modificacion: enero 2013
+	-------------------------------------
+	2013 braiscalvogarcia@gmail.com 
+	=====================================
+*/
+
+
+/* 
+    ======================================
+    elimino los margin y padding que pueda 
+	traer por defecto cualquier navegador.
+	------------
+	esto no afecta una vez establezca yo 
+	los margin y padding de cada capa
+	======================================
+
+*/
+*{
+	margin:0;
+	padding:0;	
+}
+
+/* 
+    ==========================================
+    @font-face: propiedad de css3 con el 
+	que podemos utilizar cualquier tipografia
+	=========================================
+
+*/
+@font-face{
+	font-family: 'alexBrush';
+	font-style: normal;
+   	font-weight: normal;
+	src: url(../css/tipografia_alex-brush/AlexBrush-Regular-OTF.otf);
+}
+
+@font-face{
+	font-family: 'flux';
+	font-style: normal;
+   	font-weight: normal;
+	src: url(../css/tipografia_Flux/Flux_Architect_Italic.ttf);
+}
+
+/* 
+    ==========================================
+   		DEFINICION DE TIPOGRAFIA LOGO
+	=========================================
+
+*/
+.logoSup{
+	font-family:flux;
+	font-size:30px;
+	color:#000;	
+}
+
+.logoInf{
+	font-family:alexBrush;	
+	font-size:30px;
+	color:#000;
+
+}
+
+p#solWeb{
+	padding-left:10px;	
+	padding-top:20px;
+	
+}
+
+/* 
+    ==========================================
+   			FIN DEFINICION TIPOGRAFIAS
+	=========================================
+
+*/
+
+
+/* 
+    ======================================
+    establezco el color de fondo para 
+	el body, 
+	======================================
+
+*/
+body{
+	
+	/*background-image:url(../img/bg.jpg); */
+	background-color: #C8CEC9;  */
+	
+}
+
+
+
+/* 
+    ======================================
+    contenedor1: situado en la parte superior
+	de la pantalla, en el aparecerá el logo
+	======================================
+
+*/
+
+div#contenedor1{
+	width: 90%;
+	height:550px;
+	/*border: #080808 1px solid; */  
+	margin-left:60px;
+}
+
+div#logo{
+	margin-top:20px;
+	width:220px;
+	height:200px;
+	font-size:18px;
+	border:#FFF 1px solid;
+}
+
+
+
+/* ====================== X  ========================== X =================================== */
+
+/* 
+    ========================================
+    contenedor2: situado en la parte inferior
+	contiene el menu de navegacion 
+	y el pie de pagina, 
+	========================================
+
+*/
+
+div#contenedor2{
+	background-color:#000;
+	width:100%;
+	height:300px;
+	/*border:#FFF 1px solid; */
+}
+
+
+/* 
+    ========================================
+    contenidoInf: ocupa la zona inferior de 
+	la web
+	========================================
+
+*/
+
+div#contenidoInf{
+	width:90%;
+	height:300px;	
+	/*border:#FFF 1px solid; */
+	margin-left:60px;
+}
+
+/* 
+    ========================================
+    listarIntemsHorizontal: Modifica la lista 
+	de items para que los muestre en disposicion
+	horizontal
+	========================================
+
+*/
+
+.listarItemsHorizontal{
+	display:inline;
+	padding-left:5px;
+	padding-right:15px;
+		
+}
+
+/* 
+    ========================================
+    nav: contiene los links de navegacion
+	========================================
+
+*/
+div#nav{
+	font-family:flux;
+	padding-top:20px;
+	/*border:#FFF 1px solid; */
+	width:600px;
+	height:30px;
+}
+
+
+a{
+	color:#FFF;	
+	text-decoration:none;
+	font-size:18px;
+}

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+for i in $(ls *.jpg); do
+composite -gravity South -quality 100 watermarkVertThumb.png $i $i
+done
