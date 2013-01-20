@@ -4,18 +4,18 @@ button,
 input,
 select,
 textarea {
-    color: grey;
+    color: black;
 }
 
 body {
 	font-family:font-family: 'Oxygen', sans-serif;
 	color:#ffffff;
-	background-color:#6d6968;
+	background-color:#000000;
 }
 
 a:link {
 	text-decoration:none;
-	color:#ffffff;
+	color:orange;
 }
 
 a:hover {
@@ -31,9 +31,11 @@ a:visited {
 	color:#ffffff;
 }
 
-#pics, #social, #formulario,#info {
-	margin-left:14%;
+#pics, #social, #pedidos, #FAQ, #info, #contacto {  /* propiedades aplicadas a todas las secciones excepto el footer */
+	margin-left:20%;
 	margin-right:10%;
+	margin-bottom:20%;
+	font-family:font-family: 'Oxygen', sans-serif;
 }
 
 #main-menu {
@@ -41,6 +43,10 @@ a:visited {
 	background-color:#292929;
 	width:13%;
     border-radius:20px;
+}
+
+ul {
+	list-style-type: none;  /*elimina los bullets de los ul*/
 }
 
 #main-menu ul {
@@ -68,39 +74,67 @@ a:visited {
 
 #galeria {
 	overflow: auto;	
-	border:1px solid black;
+	border:1px solid white;
 	width:60%;
 } 
 
 #galeria2 {
 	overflow: auto;	
-	border:1px solid black;
+	border:1px solid white;
 	width:60%;	
 }
 
-#social {
-}
 
 #social #twitter {
 	overflow: auto;
-	border:1px solid black;
+	/*border:1px solid white;*/
 	width:55%;
 	float:left;
 }
 
 #social #facebook {
 	overflow: auto;
-	border:1px solid black;
+	/*border:1px solid white;*/
 	width:25%;
 	float:rigth;
 }
 
 h1 {
-	margin-left:15%;
-	color:#292929;
+	margin-top:0;
+	margin-left:-7%;
+	/*border:1px solid white;*/
+	color:#111111;  /*color del texto de los h1 */
+	text-align:center;
+	height:96px;
+	width:533px;
 	font-weight:bold;
-	font-size:3em;
+	font-size:4em;
+	background-image:url(../img/header.png);
+	background-repeat:no-repeat;
 }
 
+#footer {
+	width:100%;
+	height:150px;
+	background-color:grey;
+	color:black;
+}
 
+/*
+#footer a:link, a:visited {
+	text-decoration:none;
+	color:#000000;
+}
 
+#footer a:hover {
+	font-weight:bold;
+}
+*/
+
+#FAQ span{
+	font-weight:bold;
+}
+
+#FAQ div {
+	
+}
