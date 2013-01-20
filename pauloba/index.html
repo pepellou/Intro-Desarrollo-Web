@@ -24,7 +24,6 @@
 			<ul>
 				<li id="logo"><img src="img/logo.png" width="90%"/></li>
 				<li><a href="index.html">Galer&iacute;a</a></li>
-                <li><a href="#social">Redes</a></li>
                 <li><a href="#pedidos">Pedidos</a></li>
                 <li><a href="#FAQ">F.A.Q.</a></li>
                 <li><a href="#info">Acerca de</a></li>
@@ -34,13 +33,31 @@
 					<a href="http://twitter.com/realworldpixels" target="_blank"><img src="img/twitter.png"/></a>					
             </ul>
          </div>
+         
+         <div id="twitter">
+			<a class="twitter-timeline"  href="https://twitter.com/RealWorldPixels" data-widget-id="280737459350933506" target="_TOP" >Tweets por @RealWorldPixels</a>
+				<script>
+					!function(d,s,id) {
+						var js,fjs=d.getElementsByTagName(s)[0];
+						if(!d.getElementById(id)) {
+							js=d.createElement(s);
+							js.id=id;
+							js.src="//platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}
+					(document,"script","twitter-wjs");
+				</script>
+			</div> <!-- FIN WIDGET TWITTER !-->
+						
+						
             
             <div id="pics">
 
                 <article>
 					<h1>Galer&iacute;a</h1>
                     <header>
-                        <p>Todos los dise&ntilde;os de la galer&iacute;a est&aacute;n disponibles para la venta. Pincha en una imagen para verla grande y navegar por la galer&iacute;a.</p>
+                        <p>Todos los dise&ntilde;os de la galer&iacute;a est&aacute;n disponibles para la venta. <br>Pincha en una imagen para verla grande y navegar por la galer&iacute;a.</p>
                     </header>  
                     <section id="galeria">
 					
@@ -116,38 +133,7 @@
                 </article>
                </div> <!-- FIN SECCION FOTOS !--> 
                
-               
-                
-                <div id="social">	
-					<h1>Redes sociales</h1>
-					<article>
-						<section id="twitter">
-							<header> <p> <h2> ¡Sigue nuestros tweets! </h2></p>  </header>
-							<a class="twitter-timeline"  href="https://twitter.com/RealWorldPixels" data-widget-id="280737459350933506" target="_TOP" >Tweets por @RealWorldPixels</a>
-							<script>
-								!function(d,s,id)
-								{
-									var js,fjs=d.getElementsByTagName(s)[0];
-									if(!d.getElementById(id))
-									{
-										js=d.createElement(s);
-										js.id=id;
-										js.src="//platform.twitter.com/widgets.js";
-										fjs.parentNode.insertBefore(js,fjs);
-									}
-								}
-								(document,"script","twitter-wjs");
-							</script>
-						</section>  <!-- fin section widget twitter -->
-
-						<section id="facebook">
-							<header> <p> <h2>¡Estamos en Facebook! </p></h2> </header>
-								<a href="https://www.facebook.com/RealWorldPixels" target="_TOP"><img src="img/fb.jpg" width="73%"></a>
-						</section> 
-					</article>
-				</div> <!-- FIN SECCION REDES SOCIALES !-->
-				
-				
+               			
 				<div id=formulario>
 				    <?php require_once('recaptchalib.php'); $publickey = "6LePnNgSAAAAAMQRqHqtdHZ0gs-TCojJugnmd9MG"; ?>
 					
@@ -294,66 +280,51 @@
               
               
               <div id="info">
-			
-				<aside> <!-- texto de la derecha, la posicion esta definida en el CSS -->
-                    <h1>Sobre mi ...</h1>
-                    <p>
-						Hola, me llamo Paula, y descubr&iacute; los <i>beads</i> hace tiempo, pero no me anim&eacute; a hacer dise&ntilde;os con ellos hasta 2012.
-                    </p>
-                    
-                    <p>
-						De los <i>beads</i> puedo decir dos cosas, que cualquiera puede hacer un mont&oacute;n de dise&ntilde;os y que es adictivo :)
-                    </p>
-                    
-                    
-                    <p>
-						Esta p&aacute;gina contiene im&aacute;genes de dise&ntilde;os que he hecho con Hama <i>beads</i> y que est&aacute;n a la venta.
-						</br>En internet hay infinidad de dise&ntilde;os para <i>beads</i>, pero si necesitas un dise&ntilde;o personalizado
-						puedes usar el formulario de contacto para comentarme tu idea y vemos que se puede hacer :D						
-					</p>
-					
-					<p>
-						Si est&aacute;s interesad@ en el dise&ntilde;o con <i>beads</i> o quieres comprar alguno, est&aacute;s en el lugar adecuado ;)
-					</p>
-                </aside>
+				<h1>Acerca de ...</h1>
+				<article id="sobreMi"> <!-- texto, la posicion esta definida en el CSS -->
+                    <header> <h2>Sobre mi ...</h2> </header>
+                    <section>
+						<p>
+							Hola, me llamo Paula, y descubr&iacute; los <i>beads</i> hace tiempo, pero no me anim&eacute; a hacer dise&ntilde;os con ellos hasta 2012.
+							De los <i>beads</i> puedo decir dos cosas, que cualquiera puede hacer un mont&oacute;n de dise&ntilde;os y que es adictivo :)
+
+							Esta p&aacute;gina contiene im&aacute;genes de dise&ntilde;os que he hecho con Hama <i>beads</i> y que est&aacute;n a la venta.
+							</br>En internet hay infinidad de dise&ntilde;os para <i>beads</i>, pero si necesitas un dise&ntilde;o personalizado
+							puedes usar el formulario de contacto para comentarme tu idea y vemos que se puede hacer :D						
+
+							Si est&aacute;s interesad@ en el dise&ntilde;o con <i>beads</i> o quieres comprar alguno, est&aacute;s en el lugar adecuado ;)
+						</p>
+					</section>
+                </article>
 				
-                <article>
-                    <header>
-                        <h1>Sobre los <i>beads</i> ...</h1>
-                      </header>
+                <article id="sobreBeads">
+                    <header> <h2>Sobre los <i>beads</i> ...</h2> </header>
                     <section>
                       <p>
                         Los <i>beads</i>, son unos peque&ntilde;os cilindros de pl&aacute;stico hueco.
                         Se colocan sobre una plantilla de pl&aacute;stico formando dise&ntilde;os.
                         </br>&iexcl;De modo que cada <i>bead</i> es como un pixel!
-                      </p>
-                      
-                      <p>Una vez finalizado el dise&ntilde;o se coloca un papel especial 
+						
+						</br>Una vez finalizado el dise&ntilde;o se coloca un papel especial 
                         y se planchan con una plancha de la ropa, as&iacute;, al derretirse el pl&aacute;stico el dise&ntilde;o queda fijo,
                         et voil&aacute;, ya tenemos nuestro dise&ntilde;o unido de forma permanente :)
-                      </p>
-                      
-                      <p>
+
                         </br>Existen varias marcas de <i>beads</i>, Hama(danesa) es la m&aacute;s conocida, tambi&eacute;n est&aacute;n dos marcas suecas, Nabi y PhotoPearls.
-						</br>La diferencia principal son los colores que ofrece cada marca.
-						 </br>Yo utilizo <i>Hama Beads</i>.
-					  </p>
-					 
-					  <p>
-					    </br>Existen 3 tama&ntilde;os de <i>beads</i> de la marca Hama
+						La diferencia principal son los colores que ofrece cada marca.
+						Yo utilizo <i>Hama Beads</i>.
+					  
+					    Existen 3 tama&ntilde;os de <i>beads</i> de la marca Hama
                         <ul>
 							<li> <b>Mini:</b> para trabajar con ellos hace falta un alfiler, buena vista y buen pulso </li>
 							<li> <b>Midi:</b> son de aproximadamente 1cm de alto y m&aacute;s manejables que los mini </li>
 							<li> <b>Maxi:</b> est&aacute;n pensados para ni&ntilde;os </li>
                         </ul>
                                        
-                        </br>Los colores de los Hama Beads son un total de 48, tanto para Hama Beads Mini como Hama Beads Midi.
+                        Los colores de los Hama Beads son un total de 48, tanto para Hama Beads Mini como Hama Beads Midi.
                         Para Midi hay varias tonalidades m&aacute;s: oro, plata, bronce, amarillo (Winnie the Pooh) y los que brillan en la oscuridad de varios colores.
-				      </p>
 				      
-				      <p>
 						Si tienes inter&eacute;s, la p&aacute;gina oficial tiene m&aacute;s info: <a href="http://www.hamabeads.com">hamabeads.com</a>
-						</br>Tambi&eacute;n puedes comprarlos en:
+						Tambi&eacute;n puedes comprarlos en:
 							<ul>
 								<li>
 									<a href="http://www.tiendadehamabeads.com" >tiendadehamabeads.com</a>  
