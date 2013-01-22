@@ -1,9 +1,15 @@
+<?php
+
+require_once dirname(__FILE__)."/src/WebPage.php";
+
+$webPage = new WebPage();
+$webPage->setTitle('My favourite videos');
+$webPage->addCSS('http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo');
+$webPage->addCSS('css/style.css');
+
+?>
 <html>
-<head>
-	<title>My favourite videos</title>
-	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
-	<link href='css/style.css' rel='stylesheet' type='text/css'>
-</head>
+<head><?php $webPage->renderHead(); ?></head>
 <body>
 	<div class="main">
 		<h1>
