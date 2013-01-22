@@ -3,8 +3,6 @@
 require_once dirname(__FILE__)."/src/FavVideoWebPage.php";
 require_once dirname(__FILE__)."/src/User.php";
 
-session_start();
-
 if (!is_null(User::currentUser())) {
 
 	$webPage = new FavVideoWebPage();
