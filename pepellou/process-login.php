@@ -4,9 +4,6 @@ require_once dirname(__FILE__)."/src/FavVideoWebPage.php";
 
 $webPage = new FavVideoWebPage();
 
-?>
-<?php
-
 session_start();
 
 $username = $_POST["username"];
