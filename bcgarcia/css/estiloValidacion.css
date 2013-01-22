@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@charset "UTF-8″;
+/* CSS Document */
+
+
+/* estilos para la validacion de campos */
+div.vanadium-invalid {
+	border-color: red !important;	
+	border-style: solid !important;
+	
+}
+/*
+div.vanadium-valid {
+	border-color: green !important;
+	border-style: solid !important;
+}
+
+*/
+
+
+.vanadium-message-value {
+	font-style: italic;
+	text-decoration: none;
+}
+.vanadium-advice.vanadium-invalid, .vanadium-advice.vanadium-invalid * {
+	
+	color: red;
+}
+
+/*
+input.vanadium-valid {
+	border-color: greenyellow;
+}
+
+*/
+input.vanadium-invalid {
+	border-color: red;
+}
+
+/*
+input.vanadium-valid ~ .vanadium-valid-advice {
+	display: inline !important;
+	color: green;
+}
+
+*/
+
+
