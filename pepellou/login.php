@@ -45,7 +45,7 @@
 				</a>
 			</span>
 		</h1>
-		<h2>Register form</h2>
+		<h2>Login form</h2>
 		<form action="process-login.php" method="POST">
 			<fieldset>
 				<legend>User data</legend>
