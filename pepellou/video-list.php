@@ -1,15 +1,13 @@
 <?php
 
-require_once dirname(__FILE__)."/src/WebPage.php";
+require_once dirname(__FILE__)."/src/FavVideoWebPage.php";
 
 session_start();
 
 if (isset($_SESSION["logged"]) && $_SESSION["logged"] == "yes") {
 
-$webPage = new WebPage();
+$webPage = new FavVideoWebPage();
 $webPage->setTitle('Your list');
-$webPage->addCSS('http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo');
-$webPage->addCSS('css/style.css');
 
 ?>
 <html>

@@ -1,11 +1,8 @@
 <?php
 
-require_once dirname(__FILE__)."/src/WebPage.php";
+require_once dirname(__FILE__)."/src/FavVideoWebPage.php";
 
-$webPage = new WebPage();
-$webPage->setTitle('My favourite videos');
-$webPage->addCSS('http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo');
-$webPage->addCSS('css/style.css');
+$webPage = new FavVideoWebPage();
 
 ?>
 <?php
