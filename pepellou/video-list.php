@@ -45,7 +45,7 @@ if (isset($_SESSION["logged"]) && $_SESSION["logged"] == "yes") {
 <body>
 	<div class="main">
 		<h1>
-			<a href="index.html">My favourite videos</a>
+			<a href="index.php">My favourite videos</a>
 			<span style="float: right">
 				<a href="http://www.imdb.com" target="_blank">
 					<img src="img/imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
@@ -59,7 +59,7 @@ if (isset($_SESSION["logged"]) && $_SESSION["logged"] == "yes") {
 				<li>The Party</li>
 			</ol>
 		</p>
-		<a href="index.html">Return to home</a>
+		<a href="index.php">Return to home</a>
 	</div>
 </body>
 </html>

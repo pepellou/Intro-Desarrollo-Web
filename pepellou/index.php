@@ -50,8 +50,8 @@
 			Here you can make a list of your favourite videos and see others' lists.
 		</div>
 
-		<a href="login.html">Login here</a><br/>
-		<a href="register.html">Register here</a><br/>
+		<a href="login.php">Login here</a><br/>
+		<a href="register.php">Register here</a><br/>
 	</div>
 </body>
 </html>
