@@ -1,43 +1,17 @@
 <?php
 
 require_once dirname(__FILE__)."/src/FavVideoWebPage.php";
+require_once dirname(__FILE__)."/src/User.php";
 
 $webPage = new FavVideoWebPage();
 
 session_start();
 
-$username = $_POST["username"];
-$password = $_POST["password"];
-
-$user_data_file = "./users/".$username.".txt";
-
-if (file_exists($user_data_file)) {
-
-	$stored_password = "";
-
-	foreach (file($user_data_file) as $line) {
-		$parts = explode(":", trim($line));
-		list($field_name, $field_value) = $parts;
-		if ($field_name == "password") {
-			$stored_password = $field_value;
-		}
-	}
-
-	if ($password == $stored_password) {
-		$logged = true;
-		$_SESSION["logged"] = true;
-	} else {
-		$logged = false;
-		$_SESSION["logged"] = false;
-		$error = "That's not your password!";
-	}
-
-
-} else {
-	$logged = false;
-	$_SESSION["logged"] = false;
-	$error = "That user doesn't exist!";
-}
+$user = new User(
+	$_POST["username"],
+	$_POST["password"]
+);
+$user->login();
 
 ?>
 <html>
@@ -50,11 +24,11 @@ if (file_exists($user_data_file)) {
 			Here you can make a list of your favourite videos and see others' lists.
 		</div>
 
-	<?php if ($logged) { ?>
+	<?php if ($user->isLogged()) { ?>
 		<a href="video-list.php">Your list</a><br/>
 	<?php } else { ?>
 		<p style="color: red">
-			<?php echo $error; ?>
+			<?php echo $user->getError(); ?>
 		</p>
 	<?php } ?>
 	</div>
