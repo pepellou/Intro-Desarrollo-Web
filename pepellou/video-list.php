@@ -1,6 +1,13 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["logged"]) && $_SESSION["logged"] == "yes") {
+
+?>
 <html>
 <head>
-	<title>My favourite videos</title>
+	<title>Your list</title>
 	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
 	<style>
 		body {
@@ -38,20 +45,27 @@
 <body>
 	<div class="main">
 		<h1>
-			<a href="">My favourite videos</a>
+			<a href="index.html">My favourite videos</a>
 			<span style="float: right">
 				<a href="http://www.imdb.com" target="_blank">
 					<img src="imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
 				</a>
 			</span>
 		</h1>
-		<div>
-			Welcome to my favourite videos page.<br/>
-			Here you can make a list of your favourite videos and see others' lists.
-		</div>
-
-		<a href="login.html">Login here</a><br/>
-		<a href="register.html">Register here</a><br/>
+		<p>
+			This is <u>your list</u>:
+			<ol>
+				<li>Matrix</li>
+				<li>The Party</li>
+			</ol>
+		</p>
+		<a href="index.html">Return to home</a>
 	</div>
 </body>
 </html>
+
+<?php } else { ?>
+
+ACCESS ERROR
+
+<?php } ?>

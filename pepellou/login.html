@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Your list</title>
+	<title>My favourite videos</title>
 	<link href='http://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo' rel='stylesheet' type='text/css'>
 	<style>
 		body {
@@ -38,21 +38,22 @@
 <body>
 	<div class="main">
 		<h1>
-			<a href="index.html">My favourite videos</a>
+			<a href="">My favourite videos</a>
 			<span style="float: right">
 				<a href="http://www.imdb.com" target="_blank">
 					<img src="imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
 				</a>
 			</span>
 		</h1>
-		<p>
-			This is <u>your list</u>:
-			<ol>
-				<li>Matrix</li>
-				<li>The Party</li>
-			</ol>
-		</p>
-		<a href="index.html">Return to home</a>
+		<h2>Register form</h2>
+		<form action="process-login.php" method="POST">
+			<fieldset>
+				<legend>User data</legend>
+				Username: <input type="text" name="username"/><br/>
+				Password: <input type="password" name="password"/><br/>
+			</fieldset>
+			<input type="submit" value="Login" />
+		</form>
 	</div>
 </body>
 </html>

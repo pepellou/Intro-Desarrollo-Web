@@ -1,3 +1,41 @@
+<?php
+
+session_start();
+
+$username = $_POST["username"];
+$password = $_POST["password"];
+
+$user_data_file = "./users/".$username.".txt";
+
+if (file_exists($user_data_file)) {
+
+	$stored_password = "";
+
+	foreach (file($user_data_file) as $line) {
+		$parts = explode(":", trim($line));
+		list($field_name, $field_value) = $parts;
+		if ($field_name == "password") {
+			$stored_password = $field_value;
+		}
+	}
+
+	if ($password == $stored_password) {
+		$logged = true;
+		$_SESSION["logged"] = true;
+	} else {
+		$logged = false;
+		$_SESSION["logged"] = false;
+		$error = "That's not your password!";
+	}
+
+
+} else {
+	$logged = false;
+	$_SESSION["logged"] = false;
+	$error = "That user doesn't exist!";
+}
+
+?>
 <html>
 <head>
 	<title>My favourite videos</title>
@@ -50,8 +88,13 @@
 			Here you can make a list of your favourite videos and see others' lists.
 		</div>
 
-		<a href="login.html">Login here</a><br/>
-		<a href="register.html">Register here</a><br/>
+	<?php if ($logged) { ?>
+		<a href="video-list.php">Your list</a><br/>
+	<?php } else { ?>
+		<p style="color: red">
+			<?php echo $error; ?>
+		</p>
+	<?php } ?>
 	</div>
 </body>
 </html>
