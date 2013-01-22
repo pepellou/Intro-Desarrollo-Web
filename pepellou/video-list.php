@@ -48,7 +48,7 @@ if (isset($_SESSION["logged"]) && $_SESSION["logged"] == "yes") {
 			<a href="index.html">My favourite videos</a>
 			<span style="float: right">
 				<a href="http://www.imdb.com" target="_blank">
-					<img src="imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
+					<img src="img/imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
 				</a>
 			</span>
 		</h1>
