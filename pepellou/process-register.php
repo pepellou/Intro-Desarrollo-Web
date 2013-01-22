@@ -1,14 +1,12 @@
 <?php
 
-$user_data = "";
-foreach ($_POST as $campo => $valor) {
-	$user_data .= $campo.":".$valor."\n";
-}
+require_once dirname(__FILE__)."/src/User.php";
 
-file_put_contents(
-	"./users/".$_POST["username"].".txt", 
-	$user_data
+$user = new User(
+	$_POST["username"],
+	$_POST["password"]
 );
+$user->save();
 
 ?>
 Registered!
