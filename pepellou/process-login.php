@@ -47,14 +47,7 @@ if (file_exists($user_data_file)) {
 <head><?php $webPage->renderHead(); ?></head>
 <body>
 	<div class="main">
-		<h1>
-			<a href="">My favourite videos</a>
-			<span style="float: right">
-				<a href="http://www.imdb.com" target="_blank">
-					<img src="img/imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
-				</a>
-			</span>
-		</h1>
+		<?php $webPage->renderHeader(); ?>
 		<div>
 			Welcome to my favourite videos page.<br/>
 			Here you can make a list of your favourite videos and see others' lists.

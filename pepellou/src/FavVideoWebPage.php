@@ -11,4 +11,16 @@ class FavVideoWebPage extends WebPage {
 		$this->addCSS('css/style.css');
 	}
 
+	public function renderHeader(
+	) {
+		echo "<h1>";
+		echo "<a href='index.php'>My favourite videos</a>";
+		echo "<span style='float: right'>";
+		echo "<a href='http://www.imdb.com' target='_blank'>";
+		echo "<img src='img/imdb_logo.png' alt='Goto IMDB' title='Goto IMDB' />";
+		echo "</a>";
+		echo "</span>";
+		echo "</h1>";
+	}
+
 }

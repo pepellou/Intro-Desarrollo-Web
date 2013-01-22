@@ -14,14 +14,7 @@ $webPage->setTitle('Your list');
 <head><?php $webPage->renderHead(); ?></head>
 <body>
 	<div class="main">
-		<h1>
-			<a href="index.php">My favourite videos</a>
-			<span style="float: right">
-				<a href="http://www.imdb.com" target="_blank">
-					<img src="img/imdb_logo.png" alt="Goto IMDB" title="Goto IMDB" />
-				</a>
-			</span>
-		</h1>
+		<?php $webPage->renderHeader(); ?>
 		<p>
 			This is <u>your list</u>:
 			<ol>
