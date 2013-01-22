@@ -74,4 +74,18 @@ class User {
 		return $this->error;
 	}
 
+	public static function currentUser(
+	) {
+		if (!isset($_SESSION["logged"])) {
+			return null;
+		}
+		if ($_SESSION["logged"] != "yes") {
+			return null;
+		}
+		return new User(
+			"somebody",
+			"password"
+		);
+	}
+
 }
