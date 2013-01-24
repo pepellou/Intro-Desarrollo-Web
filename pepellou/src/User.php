@@ -90,4 +90,11 @@ class User {
 		);
 	}
 
+	public static function exists(
+		$username
+	) {
+		$theFile = dirname(__FILE__)."/../users/".$username.".txt";
+		return file_exists($theFile);
+	}
+
 }
