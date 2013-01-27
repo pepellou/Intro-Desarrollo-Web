@@ -1,0 +1,39 @@
+
+
+.grande{
+    background: url('http://atminhd.com/wp-content/uploads/2012/12/blue-abstract-wallpapers.jpg');
+    float: left;
+    width: 700px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana;
+    text-decoration: underline;
+}
+
+.centro{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.laterali{
+    margin-top: 100px;
+    width: 260px;
+    float: left;
+}
+
+li{
+    font-style: italic;
+    font-family: Verdana;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.footer{
+    background-color: black;
+    height: 20px;
+}
