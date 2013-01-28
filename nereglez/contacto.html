@@ -1,14 +1,23 @@
 <html>
 <head>
-       
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
-    <h1>Formulario de Contacto</h1></br>
+    <h1 style="text-align: center">Formulario de Contacto</h1></br>
     <form action="form_contact.php" method="POST">
-        Email: <input style="margin-left: 30px"type="text" name="email"/></br>
-        Nombre: <input style="margin-left: 20px" type="text" name="nombre"/></br>
-        Comentario: <textarea name="comentario"></textarea></br></br>
-        <input type="submit" value="Enviar">
+        <fieldset>
+        	<legend>Formulario de Contacto</legend>
+            <label>Nombre </label><input type="text" name="nombre" size="30" maxlength="100" />
+            <label>Correo Electr&oacute;nico</label><input id="mail" type="text" name="correo" size="30" maxlength="100"/>
+            <label>Comentario</label><textarea name="comentario" cols="30" rows="7"></textarea>
+            <input id="botonEnviar" type="submit" value="Enviar" />
+        </fieldset>
     </form>
-</body>    
+    <script>
+    	$(#botonEnviar).addEvent("onSubmit", function (){
+            
+            });
+    </script>
+</body>
 </html>
