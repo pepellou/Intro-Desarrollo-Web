@@ -1,0 +1,31 @@
+<html>
+<head>
+        <title>Achieving More</title>
+        <link rel="stylesheet" href="css/principal.css"> 
+        <script src="http://code.jquery.com/jquery.min.js"></script>  
+		<link href='http://fonts.googleapis.com/css?family=Denk+One' rel='stylesheet' type='text/css'>
+</head>
+<body  link="#A9F5E1" vlink="#FFFFF" alink="#FFFFF">
+	<div id="container">
+        <div class="laterali">
+			<h1>ABOUT</h1>
+			<ul>
+                <a href="javascript:void(0)" id="link1"><li>Estudios</li></a>
+                <a href="javascript:void(0)"id="link2"><li>Experiencia profesional</li></a>
+                <a href="javascript:void(0)"id="link3"><li>Intereses</li></a>
+                <a href="javascript:void(0)"id="link4"><li>Idiomas</li></a>
+            </ul>
+		</div>
+		<div class="grande">
+			<h1> Curriculum Vitae </h1></br>	
+			<div class="article">
+			</div>
+		</div>
+	</div>
+	<script>
+		$('#link1').on('click', function(){
+			$(.article).append('<p>Estudios</p>');
+		});
+	</script>
+</body>
+</html>

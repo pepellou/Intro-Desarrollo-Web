@@ -1,39 +1,66 @@
-
-
-.grande{
-    background: url('http://atminhd.com/wp-content/uploads/2012/12/blue-abstract-wallpapers.jpg');
-    float: left;
-    width: 700px;
-    margin-right: 20px;
-    margin-left: 20px;
+html, body{
+	height: 100%;
 }
 
-.titulo{
-    text-align: center;
-    font-size: 30px;
-    font-family: Verdana;
-    text-decoration: underline;
+body{
+	font-family: 'Denk One', sans-serif;
 }
 
-.centro{
-    text-align: center;
-    padding-top: 30px;
+#container{
+	float: left;
+	width: 980px;
 }
 
 .laterali{
-    margin-top: 100px;
-    width: 260px;
+	background: #6E6E6E;
+    width: 270px;
     float: left;
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
 }
 
-li{
-    font-style: italic;
-    font-family: Verdana;
-    font-size: 15px;
-    padding-top: 20px;
+.laterali h1 {
+	margin: 22px 0 26px 0;
+	text-align: center;
+	font-size: 15px;
+}
+
+.lateralli ul{
+	padding-top:30px;
+}
+
+.laterali ul li{
+	margin: 0 0 12px 0;
+	font-size: 13px;
+}
+
+.grande{
+    float: left;
+    width: 650px;
+    margin: 0 10px 20px 20px;
+    position: relative;
+}
+
+.grande h1{
+	padding: 0;
+	height: 50px;
+	background: #F2F2F2;
+	text-align: center;
+	
+}
+
+.article{
+	padding-top: 10px;
+	background: #F2F2F2;
+	text-align: center;
 }
 
 .footer{
-    background-color: black;
-    height: 20px;
+	position: fixed; 
+	bottom: 0;
+	background:#F2F2F2;
+	width: 100%;
 }
