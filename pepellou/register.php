@@ -6,7 +6,19 @@ $webPage = new FavVideoWebPage();
 
 ?>
 <html>
-<head><?php $webPage->renderHead(); ?></head>
+<head><?php $webPage->renderHead(); ?>
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+<style>
+	.icon {
+		width: 16px;
+		height: 16px;
+	}
+	.hidden {
+		display: none;
+	}
+</style>
+</head>
 <body>
 	<div class="main">
 		<?php $webPage->renderHeader(); ?>
@@ -14,7 +26,10 @@ $webPage = new FavVideoWebPage();
 		<form onsubmit="return validar()" action="process-register.php" method="POST">
 			<fieldset>
 				<legend>User data</legend>
-				Username: <input id="inputUserName" type="text" name="username" onfocusout="checkAvailable()" /><br/>
+				Username: <input id="inputUserName" type="text" name="username" />
+<img class="icon valid hidden" src="img/valid.png"/>
+<img class="icon invalid" src="img/invalid.png"/>
+<br/>
 				Password: <input type="password" name="password"/><br/>
 			</fieldset>
 			Interests:<br/>
@@ -46,23 +61,22 @@ $webPage = new FavVideoWebPage();
 			return true;
 		}
 
-function checkAvailable() {
-	var input = document.getElementById("inputUserName");
-	var username = input.value;
-	var request = new XMLHttpRequest();
-	request.onreadystatechange = function() {
-		if (request.readyState==4 
-			&& request.status==200) {
-
-			if (request.responseText == 'OK') {
-			} else {
-				alert('That name already exists');
+	$('input[name="username"]').focusout(function() {
+		$.get(
+			'http://localhost/cdw/username-available.php',
+			{ username: $(this).val() },
+			function (result) {
+				if (result == 'OK') {
+					$('img.valid').removeClass('hidden');
+					$('img.invalid').addClass('hidden');
+				} else {
+					$('img.invalid').removeClass('hidden');
+					$('img.valid').addClass('hidden');
+				}
 			}
-		}
-	}
-	request.open('GET', 'http://localhost/cdw/username-available.php?username=' + username);
-	request.send();
-}
+		);
+	});
+
 	</script>
 </body>
 </html>
