@@ -1,605 +1,160 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
 
-/*
-body {
-    font-size: 1em;
-    line-height: 1.4;
-} */
 html,
 button,
 input,
 select,
 textarea {
-    color: grey;
+    color: black;
 }
-
-
-
-::-moz-selection {
-    background: #69aaf9;
-    text-shadow: none;
-}
-
-::selection {
-    background: #69aaf9;
-    text-shadow: none;
-}
-.footer-container a:link{
-	font-weight:bold;
-	color:white;
-	text-decoration:none;
-	border-bottom:2px dashed #797979;
-}
-
-.footer-container a:hover{
-	color:#77b0d4;
-	text-decoration:none;
-}
-
-.footer-container a:visited{
-	color:white;
-	text-decoration:none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    /*background:#DCDCDC;*/
+	font-family: 'Oxygen', sans-serif;
+	color:#ffffff;
+	background-color:#000000;
+	/*background-image:url(../img/background.jpg);*/
 }
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
+a:link {
+	text-decoration:none;
+	color:orange;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-   /* border-bottom: 20px solid #83a8b1; */ /* color barra separadora arriba */
-}
-
-
-
-.main aside, .info aside 
-{
-	
-    border-top: 20px solid #436068;   
-}
-
-.footer-container
-{
-	/*top-bottom: 20px solid #83a8b1; */
-	border-bottom: 40px solid #436068;  /* color barra separadora de abajo  */
-}
-
-.header-container 
-{
-	background:#436068;  /* color RELLENO cabecera */
-}
-
-.footer-container
-{
-    background: #436068;  /* color RELLENO footer y parrafo grande */
-}
-
-.main aside, .info aside 
-{
-	background: #83a8b1;
-}
-
-.title {
-    color: white;
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-/*##############################################################################################################*/
-								/*botones de inicio info y contacto */
-/*##############################################################################################################*/
-nav a {
-   border-top: 1px solid #011e2e;
-   background: #436068;
-   background: -webkit-gradient(linear, left top, left bottom, from(#83a8b1), to(#436068));
-   background: -webkit-linear-gradient(top, #83a8b1, #436068);
-   background: -moz-linear-gradient(top, #83a8b1, #436068);
-   background: -ms-linear-gradient(top, #83a8b1, #436068);
-   background: -o-linear-gradient(top, #83a8b1, #436068);
-   padding: 2.5px 5px;
-   -webkit-border-radius: 13px;
-   -moz-border-radius: 13px;
-   border-radius: 13px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 13px;
-   font-family: Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   text-align: center;
-   font-weight: bold;
-   display: block;
-   margin-bottom: 10px;
-   padding: 15px 0;
-   }
-
-
-nav a:hover {
- border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
-   text-align: center;
-   font-weight: bold;
-   display: block;
-   margin-bottom: 10px;
-   padding: 15px 0;
-   }
-   
-nav a:active {
- border-top-color: #1b435e;
-   background: #1b435e;
-   text-align: center;
-   font-weight: bold;
-   display: block;
-   margin-bottom: 10px;
-   padding: 15px 0;
-   }
-/*##############################################################################################################*/
-								/* FIN botones de inicio info y contacto */
-/*##############################################################################################################*/
-
-
-
-
-
-/*##############################################################################################################*/
-                           /* LINKS DE INFO tiendadehamabead.es Y DEMÁS */
-/*##############################################################################################################*/
-.info a:link{
+a:hover {
 	font-weight:bold;
-	color:#000000;   /*color de los links de info */
 }
-.info a:hover{
-	font-weight:bold;
-	color:#999999;   /* color al pasar el puntero sobre el link */
-}
-.info a:visited{
-	font-weight:bold;
-	color:#000000;    /* color una vez visitado el link  */
+
+a:active {
+	font-weight:bold;  /*en este caso no queda marcado el link activo porque hay un único archivo index donde esta todo el contenido*/
 }
 
 
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.pics #galeria, .pics #galeria2{
-	width: 40%;
-	padding:10px;
+a:visited {
+	text-decoration:none;
+	color:orange;
 }
 
-.pics #galeria{
+#pics, #social, #pedidos, #FAQ, #info, #contacto {  /* propiedades aplicadas a todas las secciones excepto el footer */
+	margin-left:25%;
+	margin-right:40%;
+	margin-bottom:20%;	
+}
+
+#twitter {
+	position:fixed;
+	top:10px;
+	right:10px;
+	width:20%;
+}
+
+#main-menu {
+	position:fixed;
+	top:10px;
+	left:10px;
+	background-color:#292929;
+	width:15%;
+    border-radius:20px;
+}
+
+ul {
+	list-style-type: none;  /*elimina los bullets de los ul*/
+}
+
+#main-menu ul {
+	list-style-type: none;  /*elimina los bullets de los ul*/
+	padding:5%;
+	margin-left:10%;
+	margin-bottom:10%;
+}
+
+
+#main-menu #logo {
+	margin-bottom:10%;
+}
+
+#main-menu #lastItem {
+	margin-top:20%;
+}
+
+#pics {
+	overflow: auto;	
+	width:55%;
+}
+
+#galeria img, #galeria2 img {
 	float:left;
 }
 
-.pics #galeria2{
-	float:right;
+#galeria {
+	overflow: auto;	
+	border:1px solid white;
+	width:70%;
+	margin-bottom:5%;
+} 
+
+#galeria2 {
+	overflow: auto;	
+	border:1px solid white;
+	width:70%;	
 }
 
-.pics img{
-	margin: 5px;
-	float: left;
-	border: 2px dotted #999999;   /* color del borde punteado de las fotos de la galeria */
-}
-.main #pedidos form input, .main #pedidos form textarea {
-	color:grey;
-}
 
-   
-.main, .info {
-    padding: 30px 0;
-}
-
-.main article h1, .info article h1{
-    font-size: 2em;
-}
-
-.main aside, .info aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-#FAQ p span:first-child{
-	font-weight:bold;
-}
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-#botones {    /* BOTONES INICIO, INFO, CONTACTO */
-	display:block;
-	list-style:none;
-	margin:0px;
-	padding:0px;
-	margin-top:10px;		
-	text-align:left;	
-}
-
-#botones li {
+#social #twitter {
+	overflow: auto;
+	/*border:1px solid white;*/
+	width:65%;
 	float:left;
-	margin-right:30px;	
 }
 
-#botones li:last-child{
-	float:none;
-	margin-right:0px;
+#social #facebook {
+	overflow: auto;
+	position:relative;
+	left:10%;
+	/*border:1px solid white;*/
+	width:30%;
+	float:rigth;
 }
 
-/*===============================================================================================
- * 									 WIDGETS REDES SOCIALES					
- *=============================================================================================== */
-
-.social #twitter{       /* 	WIDGET DE TWITTER */
-	float:left;
-	width: 40%;
-	padding:10px;
-}
-
-
-.social #facebook{       /* 	WIDGET DE FACEBOOK */
-	float:right;
-	width: 50%;
-	padding:10px;
-}
-
-
-/*===============================================================================================
-/* 										   MOTD 												*/
-/*==============================================================================================*/			
-.motd {
-	font-weight:bold;
-	magin-top:-50px;
-	clear:both;
-}
-
-/*
-.motd {
-
-    margin-right:300px;
-	margin-left:300px;
- border-top: 1px solid #96d1f8;
-   background: #65a9d7;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#65a9d7));
-   background: -webkit-linear-gradient(top, #ffffff, #65a9d7);
-   background: -moz-linear-gradient(top, #ffffff, #65a9d7);
-   background: -ms-linear-gradient(top, #ffffff, #65a9d7);
-   background: -o-linear-gradient(top, #ffffff, #65a9d7);
-  padding: 5px 10px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #6e6e6e;
+h1 {
+	margin-top:0;
+	/*margin-left:-7%;*/
+	/*border:1px solid white;*/
+	overflow:auto;
+	color:#111111;  /*color del texto de los h1 */
 	text-align:center;
-}
-*/
-
-.logo{
-	text-align: float left;
-	padding-bottom: 9px;  /* para subir el logo con mensaje de navidad y que quede alineado con el texto de MOTD */
-	margin-right: 12px; /* margen a la derecha del logo para separarlo del texto y que no quede pegado */
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-.footer-container .left{
-	float:left;
-	width:60%;
-}
-    nav a {
-        float: left;
-        width: 27%;
-		
-        margin: 2% 1.7%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+	height:96px;
+	width:533px;
+	font-weight:bold;
+	font-size:2em;
+	background-image:url(../img/header.png);
+	background-repeat:no-repeat;
 }
 
-@media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-
-    .header-container,
-    .main aside, .info aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-	 
-	.main article {
-        float: left;
-        width: 57%;
-    }
-    
-    .main article #pedidos{
-        float: left;
-        
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-	
-	.info article{
-		float: right;
-		width:57%;
-	}
-	
-	.info aside{
-		float:left;
-		width:28%;
-	}
-	
+#info #sobreBeads {
+	margin-top:15%;
 }
 
-@media only screen and (max-width: 400px){
-	.title {
-		text-align:center;
-	}
+#FAQ span{   /* pregunta FAQ */
+	font-weight:bold;
+	font-size:1.2em;	
 }
 
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+#FAQ div {   /* Respuesta FAQ */
+	/*margin-left:20px;*/
+	margin-bottom:40px;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
+#FAQ div ul {
+	margin-left:0;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
+#footer {
+	width:100%;
+	height:150px;
+	background-color:#292929;
+	color:white;
 }
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow:none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+#footer a:link {
+	text-decoration:underline;
+	color:orange;
 }
