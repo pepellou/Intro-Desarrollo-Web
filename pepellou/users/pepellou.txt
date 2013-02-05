@@ -1,5 +1,5 @@
 username:pepellou
-password:dsfgdsfg
+password:pepellou
 games:seleccionado
 cars:on
 gender:Man
